@@ -40,5 +40,5 @@ class parking_spot:
         else:
             status = "Empty"
             light = "Green"
-        return status + Green
+        return status + light
     
