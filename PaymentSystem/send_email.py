@@ -1,9 +1,18 @@
 import smtplib
 
 server = smtplib.SMTP('smtp.outlook.com', 587)
-message = "ebill is ready"
 server.ehlo()
 server.starttls()
+server.ehlo()
 server.login("mahnamnauman@hotmail.com", "bayview<33")
-server.sendmail("mahnamnauman@hotmail.com", "bratzmahi@gmail.com", message)
+
+subject='Thank You for using AGPLS'
+content="Your e-bill is ready"
+mailtext='Subject:'+subject+'\n\n'+content
+
+
+
+
+
+server.sendmail("mahnamnauman@hotmail.com", "bratzmahi@gmail.com", mailtext)
 server.close()
