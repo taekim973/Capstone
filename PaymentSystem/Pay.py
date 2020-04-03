@@ -53,7 +53,7 @@ def sendbill(price):
                 server.ehlo()
                 server.starttls()
                 server.ehlo()
-                server.login("mahnamnauman@hotmail.com", "bayview<33")
+                server.login("mahnamnauman@hotmail.com", "Bayview!1")
                 subject='Thank You for using AGPLS'
                 content="Your e-bill is ready: %s" % price
                 mailtext='Subject:'+subject+'\n\n'+content
